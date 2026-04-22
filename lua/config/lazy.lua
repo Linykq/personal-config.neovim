@@ -91,6 +91,15 @@ require("lazy").setup({
     -- Git sign
     {
       "lewis6991/gitsigns.nvim",
+    },
+    -- File searcher
+    {
+      'nvim-telescope/telescope.nvim', version = '0.2.1',
+      dependencies = {
+        'nvim-lua/plenary.nvim',
+        -- optional but recommended
+        { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+      }
     }
   },
   -- Configure any other settings here. See the documentation for more details.
