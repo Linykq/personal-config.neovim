@@ -101,6 +101,12 @@ require("lazy").setup({
         { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
       }
     },
+    -- buffer 
+    {
+     'akinsho/bufferline.nvim', 
+      version = "*", 
+      dependencies = 'nvim-tree/nvim-web-devicons',
+    },
     -- Markdown previewer
     {
       "toppair/peek.nvim",
